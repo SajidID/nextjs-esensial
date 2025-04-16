@@ -24,7 +24,3 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), ui-sans-serif, system-ui;
 }
-
-code pre {
-  font-family: var(--font-mono), ui-monospace, SFMono-Regular;
-}
