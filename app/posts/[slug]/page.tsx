@@ -16,8 +16,6 @@ export default async function PostPage({
 
     const post = await getPost(slug);
 
-    console.log(post)
-
     return(
         <article>
             <h1>{post.title}</h1>

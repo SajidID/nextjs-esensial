@@ -1,6 +1,19 @@
 {
-    "posts": [
-      { "id": "1", "title": "post 1","slug":"post-1", "content":"content post 1" },
-      { "id": "2", "title": "post 2","slug":"post-2", "content":"content post 2" }
-    ]
+  "posts": [
+    {
+      "id": "1",
+      "title": "post 1",
+      "slug": "post-1",
+      "content": "content post 1"
+    },
+    {
+      "id": "2",
+      "title": "post 2",
+      "slug": "post-2",
+      "content": "content post 2"
+    }
+  ],
+  "setting":{
+    "siteName":"Sajid Blog"
+  }
 }

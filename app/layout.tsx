@@ -28,6 +28,9 @@ export default function RootLayout({
       <body
         className={`${fontSans.variable} ${fontMono.variable} antialiased`}
       >
+        <header className="border-b border-white text-4xl">
+          Sajid Blog
+        </header>
         <header className="border-b border-white">
           <nav>
             <Link href="/">Home</Link>
