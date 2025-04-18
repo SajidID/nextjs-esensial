@@ -30,9 +30,7 @@ export default function RootLayout({
       >
         <header className="border-b border-white text-4xl">
           Sajid Blog
-        </header>
-        <header className="border-b border-white">
-          <nav>
+          <nav className="text-2xl space-x-4 py-2 mb-2">
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/about/team">Team</Link>
