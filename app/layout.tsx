@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Source_Sans_3, JetBrains_Mono} from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { Footer } from "./footer";
+
 
 const fontSans = Source_Sans_3({
   variable: "--font-sans",
@@ -37,6 +39,7 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
+        <Footer/>
       </body>
     </html>
   );
