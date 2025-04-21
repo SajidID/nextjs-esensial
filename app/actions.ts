@@ -1,5 +1,9 @@
 "use server";
 
-export async function createComment(formData: FormData) {
-  console.log(formData.get("comment"));
+export async function createComment(prevData: any, formData: FormData) {
+  const comment = formData.get("comment") as string;
+
+  if(!comment) {
+    return {error:"Comment is required"}
+  }
 }

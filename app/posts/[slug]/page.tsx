@@ -1,5 +1,5 @@
-import { createComment } from "@/app/actions";
 import { Post } from "@/app/types/Post";
+import { CommentForm } from "./comment-form";
 
 async function getPost(slug: string): Promise<Post> {
   const res = await fetch("http://localhost:3001/posts?slug=" + slug);
@@ -25,16 +25,7 @@ export default async function PostPage({
       </article>
       <section className="mt-4">
         <h2 className="text-lg mb-4">Comments</h2>
-        <form className="flex flex-col w-72" action={createComment}>
-          <textarea
-            placeholder="Write your command here..."
-            className="w-full h-40 border border-white mb-2 rounded"
-            name="comment"
-          />
-          <button className="bg-blue-800 text-white px-4 py-2 rounded w-full">
-            Send
-          </button>
-        </form>
+        <CommentForm />
       </section>
     </>
   );
