@@ -1,12 +1,16 @@
 import Link from "next/link";
 import { Post } from "../types/Post";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Post",
+};
 
 async function getPosts(): Promise<Post[]> {
-const res = await fetch("http://localhost:3001/posts");
-const posts = await res.json();
+  const res = await fetch("http://localhost:3001/posts");
+  const posts = await res.json();
 
-return posts
-
+  return posts;
 }
 
 export default async function PostsPage() {
@@ -17,9 +21,9 @@ export default async function PostsPage() {
       <h1>Posts Page</h1>
       {posts.map((post) => (
         <article key={post.id}>
-            <h2>
+          <h2>
             <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-            </h2>
+          </h2>
         </article>
       ))}
     </div>
