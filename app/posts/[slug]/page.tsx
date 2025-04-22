@@ -1,6 +1,8 @@
 import { Post } from "@/app/types/Post";
 import { CommentForm } from "./comment-form";
 import { LikeButton } from "./like-button";
+import { Comments } from "./comments";
+import { Suspense } from "react";
 
 export async function generateMetadata({
   params,
@@ -42,6 +44,9 @@ export default async function PostPage({
       </article>
       <section className="mt-4">
         <h2 className="text-lg mb-4">Comments</h2>
+        <Suspense fallback={<p>Loading Comments...</p>}>
+        <Comments/>
+        </Suspense>
         <CommentForm />
       </section>
     </>
