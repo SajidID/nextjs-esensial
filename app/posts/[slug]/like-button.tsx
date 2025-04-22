@@ -17,7 +17,7 @@ export function LikeButton({postId}: {postId:string}) {
       className="bg-purple-500 px-4 py-2 rounded mt-7"
       onClick={handleLike}
     >
-      {pending ? "Sedang mengelaik..." : "Like"}
+      {pending ? "Loading ..." : "Like"}
     </button>
   );
 }
