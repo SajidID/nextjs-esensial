@@ -8,6 +8,6 @@ export async function createComment(prevData: any, formData: FormData) {
   }
 }
 
-export async function createLike(){
-  console.log("Masokkk")
+export async function createLike(postId:string){
+  console.log("like, postId:", postId)
 }

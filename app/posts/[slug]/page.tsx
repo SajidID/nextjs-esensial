@@ -23,8 +23,8 @@ export default async function PostPage({
       <article>
         <h1 className="text-lg">{post.title}</h1>
         <p>{post.content}</p>
-        <hr className="my-4"/>
-        <LikeButton/>
+        <hr className="my-4" />
+        <LikeButton postId={post.id}/>
       </article>
       <section className="mt-4">
         <h2 className="text-lg mb-4">Comments</h2>
